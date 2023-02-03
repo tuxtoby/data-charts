@@ -1,4 +1,6 @@
 import React, { ReactElement } from 'react'
+import { View, StyleSheet } from 'react-native';
+import { Text } from 'react-native-paper';
 import { PieChart } from 'react-native-svg-charts'
 
 export function Chart(): ReactElement {
@@ -18,9 +20,28 @@ export function Chart(): ReactElement {
     }))
 
   return (
-    <PieChart
-        style={ { height: 200 } }
-        data={ pieData }
-    />
+    <View style={[
+        styles.container,
+        {
+          // Try setting `flexDirection` to `"row"`.
+          flexDirection: 'column',
+        },
+      ]}>    
+
+        <Text style={{flex:1, textAlign:'center'}}>Ceci est un graphique</Text>
+        <PieChart
+          style={ { flex:10 } }
+          data={ pieData }
+        />
+
+    </View>
   )
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 30,
+    paddingTop:200
+  },
+});
