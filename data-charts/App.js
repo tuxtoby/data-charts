@@ -1,9 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 import { Chart } from './views/BarWithLegend.tsx';
 
-export default function App() {
+import * as React from 'react';
+import { AppRegistry } from 'react-native';
+import { Provider as PaperProvider } from 'react-native-paper';
+import { name as appName } from './app.json';
+
+export default function Main() {
   return (
-     <Chart />
+    <PaperProvider>
+      <Chart />
+    </PaperProvider>
   );
 }
+
+AppRegistry.registerComponent(appName, () => Main);
