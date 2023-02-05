@@ -1,26 +1,32 @@
 export const data = [
   {
     key: 1,
-    amount: 50,
-    svg: { fill: '#600080' },
-    text: 'Agriculture'
+    amount: 25,
+    svg: { fill: '#e7c11e' },
+    text: 'Energie'
   },
   {
     key: 2,
-    amount: 50,
-    svg: { fill: '#9900cc' },
-    text: 'Industrie'
+    amount: 24,
+    svg: { fill: '#6cae56' },
+    text: 'Agriculture'
   },
   {
     key: 3,
-    amount: 40,
-    svg: { fill: '#c61aff' },
-    text: 'Transport'
+    amount: 21,
+    svg: { fill: '#f49921' },
+    text: 'Industrie'
   },
   {
     key: 4,
-    amount: 95,
-    svg: { fill: '#d966ff' },
-    text: 'Batiment'
-  }
+    amount: 14,
+    svg: { fill: '#005c97' },
+    text: 'Transport'
+  },
+  {
+    key: 5,
+    amount: 6,
+    svg: { fill: '#da3628' },
+    text: 'Construction et résidentiel'
+  },
 ]

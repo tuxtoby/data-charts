@@ -26,6 +26,6 @@ const layoutStyle = StyleSheet.create({
     alignItems: 'center',
     flex: 1,
     padding: 30,
-    paddingTop:200
+    paddingTop: 200
   },
 });
